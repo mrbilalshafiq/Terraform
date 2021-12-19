@@ -1,18 +1,6 @@
-variable "access_key" {
-  description = "The access key for the cloud user"
-  type        = string
-  sensitive = true
-}
-
-variable "secret_key" {
-  description = "The secret key for the cloud user"
-  type        = string
-  sensitive = true
-}
-
 variable "ami-id" {
   description = "AMI ID of ubuntu 18.04LTS eu-west-1"
-  default     = "ami-02df9ea15c1778c9c"
+  default     = "ami-0015a39e4b7c0966f"
 }
 
 variable "instance-type" {
@@ -22,5 +10,5 @@ variable "instance-type" {
 
 variable "pem-key" {
   description = "Associated Key to SSH into the EC2 Instance"
-  default     = "aws2"
+  default     = "EstioAWS"
 }
